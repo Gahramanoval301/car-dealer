@@ -36,7 +36,7 @@ export default function Page({ params }: { params: Promise<{ makeId: number, yea
   return (
     <div className="px-4 my-4">
       <h2 className="text-center  text-lg">Vehicles List</h2>
-      <div>
+      <div className="vehicles-grid">
       {vehicles.Count === 0? (
         <p>No vehicles found.</p>
       ) : (
