@@ -1,7 +1,7 @@
 "use client"
 import { useEffect, useState } from "react"
 import { getVehiclesByNameAndYear, IVehicleResponseDataByYear } from "../../../../../api/vehicles"
-import SinglerResultVehicle from "@/components/Result/SinglerResultVehicle"
+import SinglerResultVehicle from "@/components/_result/SinglerResultVehicle"
 
 export async function generateStaticData(makeId: number, year: number) {
   const vehicles = await getVehiclesByNameAndYear(year, makeId)  
