@@ -64,7 +64,7 @@ export default function SelectForm({ setSelectedValues, selectedValues, type, re
                         ))
                         }
                     </select>
-                    <span className="absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none">
+                    <span className="absolute left-10 top-1/2 transform -translate-y-1/2 pointer-events-none">
                         <IoIosArrowDropdown />
                     </span>
                 </div>
