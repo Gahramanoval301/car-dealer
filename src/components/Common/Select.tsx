@@ -57,19 +57,16 @@ export default function SelectForm({ setSelectedValues, selectedValues, type, re
                         onChange={handleChange}
                         className="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
                     >
-
-
-
                         {years?.map((year: number) => (
                             <option key={year} value={year} className="px-1">
                                 {year}
                             </option>
                         ))
                         }
-                        <span className="absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none">
-                            <IoIosArrowDropdown />
-                        </span>
                     </select>
+                    <span className="absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none">
+                        <IoIosArrowDropdown />
+                    </span>
                 </div>
             }
         </form>
