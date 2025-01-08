@@ -1,4 +1,4 @@
-import VehiclesSection from "@/components/Home/VehiclesSection";
+import VehiclesSection from "@/components/_home/VehiclesSection";
 
 export default function Home() {
   return (

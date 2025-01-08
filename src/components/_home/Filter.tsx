@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import SelectForm from '../Common/Select'
+import SelectForm from '../_common/Select'
 import { IVehicleResponseData } from '../../../api/vehicles';
 import Link from 'next/link';
 
