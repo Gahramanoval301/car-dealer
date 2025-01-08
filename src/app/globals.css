@@ -5,12 +5,15 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --blue-light: #eff6ff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #ededed;  
+    --blue-light: #eff6ff;
+
   }
 }
 
@@ -18,4 +21,22 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer components {
+  .section {
+    @apply container mx-auto  px-5 mt-10 w-11/12;
+  }
+  .single-vehicle{
+    @apply p-1 px-2 flex justify-between items-center min-w-56 border-2 rounded-lg hover:bg-blue-50 
+  }
+  .dropdown-option{
+    @apply block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white
+  }
+  .vehicles-grid{
+    @apply mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 mt-2
+  }
+  .icon{
+    @apply text-2xl
+  }
 }
